@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    
+}
+header{
+    height: 100px;
+    text-align: center;
+
+    background-color: #805c5b;
+}
+header img{
+    position: relative;
+    height: 70px;
+    top: 15%;
+
+}
+
+section{
+    display: flex;
+    max-width: 80%;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#picture{
+    height: 100%;
+    width: 45%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#watch-img{
+    margin-top: 100px;
+    display: inline-block;
+   width: 100%;
+
+}
+
+#watch-info{
+    width: 55%;
+}
+#colors{
+    display: inline-flex;
+}
+#color1{
+    height: 38px;
+    width: 53px;
+    background-color: #565681;
+    border-radius: 5px;
+    margin: 0px 0px 5px 10px;
+}
+#color2{
+    height: 38px;
+    width: 53px;
+    background-color: #8a5362;
+    border-radius: 5px;
+    margin: 0px 0px 5px 10px;
+}
+#color3{
+    height: 38px;
+    width: 53px;
+    background-color:  #23211f;
+    border-radius: 5px;
+    margin: 0px 0px 5px 10px;
+}
+#color4{
+    height: 38px;
+    width: 53px;
+    background-color: #e9c7be;
+    border-radius: 5px;
+    margin: 0px 0px 5px 10px;
+}
+
+.features{
+    color: black;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    margin: 5px;
+    margin-top: 1px;
+}
+#buy-btn{
+
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    margin: 5px;
+    margin-top: 10px;
+    background-color: #cf8f0e;
+    border: none;
+}
+
+#heart-img{
+  width: 50px;
+  height: 40px;
+  position:relative;
+  left: -55%;
+  top: -2%;
+  animation: blow 0.5s infinite linear;
+  
+}
+#time{
+    display: inline-block;
+    position: absolute;
+    left: 39%;
+    top: 65%;
+    color: white;
+    
+}
+
+@keyframes blow {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.25);
+    }
+}
+
+@media screen and (max-width:900px){
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #picture{
+        display: block;
+        width: 100%;
+    }
+    #watch-img{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 20%;
+    }
+    #watch-info{
+        width: 100%;
+        position: relative;
+        top: 25%;
+        display: block;
+    }
+    #time{
+        
+        font-size: 20px;
+        top: 75%;
+    color: white;
+    left: 35%;
+    }
+    #heart-img{
+        display: inline-block;
+        left: -0.3%;
+        top: -24%;
+    
+    }
+}
